@@ -5,7 +5,5 @@ for x in nums:
 		mtplrs.append(x)
 	else:
 		mtplrs.append('0')
-
-s = set(mtplrs)
-answer = sum(map(int, s))
+answer = sum(map(int, mtplrs))
 print answer
