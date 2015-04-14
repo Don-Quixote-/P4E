@@ -1,14 +1,12 @@
-num1 = 1
-num2 = 2
-num = list()
-while num1 <= 4000000:
-	num.append(num1)
-	num.append(num2)
-	num1 += num2
-	num2 += num1
+a = 1
+b = 2
+num = 0
+while num <= 4000000: 
+	if b % 2 == 0:
+		num += b
+	elif a % 2 == 0:
+		num += a
+	a += b
+	b += a
 
-answer = 0
-for i in num:
-	if i % 2 == 0:
-		answer += i
-print answer
+print num
